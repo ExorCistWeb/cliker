@@ -456,3 +456,134 @@ h3 {
     margin-top: 14px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.32);
 }
+
+.title_trade p {
+    line-height: 120%;
+}
+
+.trade_balance {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 8px 12px;
+    background: #000;
+    filter: drop-shadow(0px 0px 11px rgba(255, 255, 255, 0.34));
+    border-radius: 100px;
+}
+
+.trade_balance img {
+    width: 29px;
+    height: 28px;
+    object-fit: cover;
+}
+
+.trade_balance span {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    /* or 138% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+}
+
+.trade p {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 5px;
+    opacity: .5;
+    font-weight: 300;
+}
+
+.trade_obmen {
+    margin-top: 33px;
+}
+
+.obmen_mb {
+    display: flex;
+    align-items: start;
+    gap: 23px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.input_box_trade {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.input_box_trade input {
+    width: 100%;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    padding: 7px 18px 0 18px;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.input_box_trade input::placeholder {
+    color: #FFFFFF;
+}
+
+.input_box_trade hr {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+    border: none;
+    width: 100%;
+    height: 1px;
+}
+
+.input_btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.input_btn button {
+    background: #282828;
+    box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.61);
+    border-radius: 100px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 5px 15px;
+    border: none;
+    outline: none;
+}
+
+.accept {
+    background: #60FF82;
+    border-radius: 100px;
+    width: 114px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+    text-transform: uppercase;
+}
