@@ -1,0 +1,458 @@
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: #0C0B0B;
+    font-family: 'SF Pro Display', sans-serif;
+}
+
+header {
+    background-color: #0C0B0B;
+    padding: 10px 25px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 888;
+}
+
+.header {
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.header a span:nth-child(1) {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(180deg, #2F2F2F 0%, #222222 100%);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header a {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 220%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.28);
+}
+
+.header a:hover span:nth-child(1),
+.header a.active span:nth-child(1) {
+    background: linear-gradient(180deg, #C7C7C7 0%, #FFFFFF 100%);
+}
+
+.header a:hover span:nth-child(1) svg path,
+.header a.active span:nth-child(1) svg path {
+    fill: #000;
+}
+
+main {
+    padding: 30px 30px;
+    width: 100%;
+}
+
+.top_menu {
+    margin-bottom: 20px;
+}
+
+.top_menu a {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 200%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.top_menu a span {
+    width: 30px;
+    height: 30px;
+    background: #FFFFFF;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    margin-bottom: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 90%;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 200%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.bonus {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.bonus_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.bonus_content {
+    display: flex;
+    align-items: start;
+    gap: 25px;
+}
+
+.bonus_img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.bonus_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bonus_info {
+    display: flex;
+    flex-direction: column;
+}
+
+.bonus_info p {
+    margin: 0;
+    line-height: normal;
+}
+
+.bonus_info span {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    color: #53FF6D;
+}
+
+.bonus_btn {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    border-radius: 100px;
+    padding: 5px 8px;
+    text-transform: uppercase;
+}
+
+.white_btn {
+    background: #F6F6F6;
+}
+
+.green_btn {
+    background: #54F25E;
+}
+
+.blue_btn {
+    background: #88BCFF;
+}
+
+.index {
+    height: 100%;
+}
+
+.index::before {
+    content: url(../img/bg.png);
+    position: absolute;
+    z-index: -1;
+    display: flex;
+    bottom: 0;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.index header {
+    background: none;
+}
+
+.btn_content_index {
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.btn_cat {
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 60px;
+    transition: scale ease-in .1s;
+    z-index: 3;
+}
+
+.btn_cat img {
+    width: 295px;
+    height: 515px;
+}
+
+.btn_cat:active {
+    scale: .9;
+    transition: scale ease-in .1s;
+}
+
+.top_info_index {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.flex_info_tap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.flex_info_tap h1 {
+    min-width: 50px;
+    text-align: center;
+}
+
+.logo_img {
+    height: 45px;
+}
+
+.logo_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.mb_span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 13px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.bottom_clik_info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.lvl_info_line {
+    width: 170px;
+    background: #3B3B3B;
+    height: 5px;
+    border-radius: 50px;
+}
+
+.lvl_info_prev,
+.lvl_info_next {
+    color: #FFFFFF;
+    gap: 3px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.bottom_progress {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 22px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.lvl_info_line {
+    transition: background 0.3s ease;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.referal_content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.box_refetal {
+    width: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 50.96%, rgba(0, 0, 0, 0.88) 96.15%, rgba(0, 0, 0, 0.54) 100%);
+    border-radius: 100px;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.88) 68.5%, rgba(0, 0, 0, 0.54) 100%);
+    filter: drop-shadow(0px 0px 11px rgba(255, 255, 255, 0.34));
+    border-radius: 100px;
+    padding: 12px 16px 12px 27px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    height: 44px;
+}
+
+.box_refetal span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    position: absolute;
+    z-index: 7;
+}
+
+.grad_box {
+    width: 100%;
+    position: absolute;
+    display: block;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) -77.04%, rgba(0, 0, 0, 0.88) 78.15%, rgba(0, 0, 0, 0.54) 100%);
+    border-radius: 100px;
+    z-index: 8;
+    left: 0;
+}
+
+.box_refetal button {
+    position: absolute;
+    right: 19px;
+    z-index: 20;
+    font-family: 'SF Pro Display', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 10px;
+    color: #000000;
+    text-transform: uppercase;
+    width: 78px;
+    height: 22px;
+    background: #FFFFFF;
+    border-radius: 100px;
+}
+
+.ref_boxes {
+    margin-top: 25px;
+}
+
+.referal_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.tg_bonus {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.ref_boxes {
+    background: #1A1A1A;
+    border-radius: 15px;
+    padding: 6px 13px;
+}
+
+.text_box {
+    max-width: 86px;
+}
+
+.text_box p {
+    line-height: 110%;
+    font-size: 10px;
+}
+
+.regular {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: rgba(186, 186, 186, 0.44);
+}
+
+.frends .title {
+    width: 100%;
+    text-align: center;
+    margin-top: 14px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.32);
+}
