@@ -338,11 +338,11 @@ p {
     cursor: pointer;
     position: absolute;
     bottom: 60px;
-    -webkit-transition: -webkit-transform 0.1s ease;
-    transition: -webkit-transform 0.1s ease;
-    -o-transition: transform 0.1s ease;
-    transition: transform 0.1s ease;
-    transition: transform 0.1s ease, -webkit-transform 0.1s ease;
+    -webkit-transition: -webkit-transform 0.2s ease;
+    transition: -webkit-transform 0.2s ease;
+    -o-transition: transform 0.2s ease;
+    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, -webkit-transform 0.1s ease;
     z-index: 1;
     -webkit-tap-highlight-color: transparent;
 }
@@ -354,9 +354,9 @@ p {
 }
 
 .btn_cat:active {
-    -webkit-transform: scale(0.9);
-    -ms-transform: scale(0.9);
-    transform: scale(0.9);
+    -webkit-transform: scale(0.94);
+    -ms-transform: scale(0.94);
+    transform: scale(0.94);
 }
 
 .click-effect {
